@@ -1,10 +1,16 @@
+from flask import Response, redirect
+from flask_admin.contrib.sqla import ModelView
+from werkzeug.exceptions import HTTPException
+from app import auth
+from app.controllers.auth import validate_authentication
+
 class AuthException(HTTPException):
     def __init__(self, message):
         super().__init__(message, Response(
             "You could not be authenticated. Please refresh the page.", 401,
             {'WWW-Authenticate': 'Basic realm="Login Required"'}
         ))
-        
+
 class MyModelView(ModelView):
     def is_accessible(self):
         if auth.get_auth():
@@ -24,7 +30,7 @@ class MyModelView(ModelView):
 
     def inaccessible_callback(self, name, **kwargs):
         return redirect(auth.login_required())
-    
+
 class ProfileView(MyModelView):
     column_exclude_list = ['password', ]
     column_searchable_list = ['username', ]
