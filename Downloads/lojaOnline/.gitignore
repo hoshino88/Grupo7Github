@@ -31,3 +31,28 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignorar arquivos de configuração do sistema
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.gitconfig
+.viminfo
+.vimrc
+.vscode/
+.idea/
+*.swp
+
+# Ignorar diretórios temporários
+.cache/
+.config/
+.docker/
+.m2/
+.npm/
+.ssh/
+
+# Ignorar arquivos de build e outros temporários
+*.log
+*.tmp
+
