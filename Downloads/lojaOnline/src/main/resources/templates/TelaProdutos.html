@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Loja - Produtos</title>
+    <link rel="stylesheet" href="TelaProdutos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <li class="cart-icon">
+                    <a href="#" id="cart-icon">
+                        <img src="carrinho.png" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="produtos">
+        <div class="produto-item" data-id="1" data-name="Item 1" data-price="20.00">
+            <div class="imagem-produto"></div>
+            <p>Item 1</p>
+            <p class="preco">Preço R$ 20,00</p>
+            <button class="add-to-cart">Adicionar</button>
+        </div>
+        <div class="produto-item" data-id="2" data-name="Item 2" data-price="30.00">
+            <div class="imagem-produto"></div>
+            <p>Item 2</p>
+            <p class="preco">Preço R$ 30,00</p>
+            <button class="add-to-cart">Adicionar</button>
+        </div>
+        <div class="produto-item" data-id="3" data-name="Item 3" data-price="15.00">
+            <div class="imagem-produto"></div>
+            <p>Item 3</p>
+            <p class="preco">Preço R$ 15,00</p>
+            <button class="add-to-cart">Adicionar</button>
+        </div>
+        <div class="produto-item" data-id="4" data-name="Item 4" data-price="25.00">
+            <div class="imagem-produto"></div>
+            <p>Item 4</p>
+            <p class="preco">Preço R$ 25,00</p>
+            <button class="add-to-cart">Adicionar</button>
+        </div>
+    </main>
+
+    <!-- Carrinho lateral -->    
+    <aside id="cart-sidebar">
+        <button id="close-cart">Fechar</button>
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <button id="checkout">Finalizar Compra</button>
+    </aside>
+
+
+    <script src="TelaProdutos.js"></script>
+</body>
+</html>

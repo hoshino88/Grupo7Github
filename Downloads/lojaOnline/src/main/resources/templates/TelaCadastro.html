@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Nome da Loja</title>
+    <link rel="stylesheet" href="TelaCadastro.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <li class="cart-icon">
+                    <a href="#">
+                        <img src="carrinho.png" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Cadastre-se agora para poder comprar nossos produtos</h1>
+        <form id="registration-form" action="#" method="post">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <input type="password" id="confirm-password" placeholder="Senha novamente" required>
+            <button type="submit">Cadastrar</button>
+            <p id="error-message" style="color: red; display: none;"></p>
+        </form>
+    </main>
+    <script src="TelaCadastro.js"></script>    
+</body>
+</html>

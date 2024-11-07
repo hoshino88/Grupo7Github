@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Loja</title>
+    <link rel="stylesheet" href="TelaPrincipal.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
+                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <li id="cart-icon">
+                    <a href="#">
+                        <img src="carrinho.png" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="inicial">
+        <h1>[Nome da Loja]</h1>
+        <p>Comece clicando no botão <a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a> ou dê uma olhada em alguns dos nossos produtos mais escolhidos.</p>
+        
+        <section class="destaques">
+            <div class="produto-item" data-id="1">
+                <div class="imagem-produto"></div>
+                <p>Item 1</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+            <div class="produto-item" data-id="2">
+                <div class="imagem-produto"></div>
+                <p>Item 2</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+            <div class="produto-item" data-id="3">
+                <div class="imagem-produto"></div>
+                <p>Item 3</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+        </section>
+    </main>
+    <!-- Carrinho lateral -->
+    <aside id="cart-sidebar">
+        <button id="close-cart">Fechar</button>
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <button id="checkout">Finalizar Compra</button>
+    </aside>
+
+    <script src="TelaPrincipal.js"></script>
+</body>
+</html>
