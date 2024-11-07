@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome da Loja</title>
-    <link rel="stylesheet" href="TelaPrincipal.css">
+    <!-- Caminho relativo para o CSS dentro de /static/css -->
+    <link rel="stylesheet" href="/css/TelaPrincipal.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <!-- Links de navegação para as rotas definidas no controlador -->
+                <li><a href="/tela/inicial">Início</a></li>
+                <li><a href="/tela/produtos">Produtos</a></li>
                 <li id="cart-icon">
                     <a href="#">
-                        <img src="carrinho.png" alt="Carrinho">
+                        <!-- Caminho relativo para a imagem dentro de /static/images -->
+                        <img src="/images/carrinho.png" alt="Carrinho">
                     </a>
                 </li>
             </ul>
@@ -23,7 +26,7 @@
 
     <main class="inicial">
         <h1>[Nome da Loja]</h1>
-        <p>Comece clicando no botão <a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a> ou dê uma olhada em alguns dos nossos produtos mais escolhidos.</p>
+        <p>Comece clicando no botão <a href="/tela/produtos">Produtos</a> ou dê uma olhada em alguns dos nossos produtos mais escolhidos.</p>
         
         <section class="destaques">
             <div class="produto-item" data-id="1">
@@ -43,6 +46,7 @@
             </div>
         </section>
     </main>
+    
     <!-- Carrinho lateral -->
     <aside id="cart-sidebar">
         <button id="close-cart">Fechar</button>
@@ -51,6 +55,7 @@
         <button id="checkout">Finalizar Compra</button>
     </aside>
 
-    <script src="TelaPrincipal.js"></script>
+    <!-- Caminho relativo para o JS dentro de /static/js -->
+    <script src="/js/TelaPrincipal.js"></script>
 </body>
 </html>

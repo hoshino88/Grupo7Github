@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Nome da Loja</title>
-    <link rel="stylesheet" href="TelaCadastro.css">
+    <!-- Caminho relativo para o CSS dentro de /static/css -->
+    <link rel="stylesheet" href="/css/TelaCadastro.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <!-- Links de navegação para as rotas definidas no controlador -->
+                <li><a href="/tela/inicial">Início</a></li>
+                <li><a href="/tela/produtos">Produtos</a></li>
                 <li class="cart-icon">
                     <a href="#">
-                        <img src="carrinho.png" alt="Carrinho">
+                        <!-- Caminho relativo para a imagem dentro de /static/images -->
+                        <img src="/images/carrinho.png" alt="Carrinho">
                     </a>
                 </li>
             </ul>
@@ -31,6 +34,8 @@
             <p id="error-message" style="color: red; display: none;"></p>
         </form>
     </main>
-    <script src="TelaCadastro.js"></script>    
+
+    <!-- Caminho relativo para o JS dentro de /static/js -->
+    <script src="/js/TelaCadastro.js"></script>    
 </body>
 </html>

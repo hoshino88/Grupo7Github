@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome da Loja</title>
-    <link rel="stylesheet" href="TelaInicial.css">
+    <!-- Caminho relativo para o CSS dentro de /static/css -->
+    <link rel="stylesheet" href="/css/TelaInicial.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaInicial\TelaInicial.html">Início</a></li>
-                <li><a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaProdutos\TelaProdutos.html">Produtos</a></li>
+                <!-- Links de navegação para as rotas definidas no controlador -->
+                <li><a href="/tela/inicial">Início</a></li>
+                <li><a href="/tela/produtos">Produtos</a></li>
                 <li class="cart-icon">
                     <a href="#" id="cart-icon">
-                        <img src="carrinho.png" alt="Carrinho">
+                        <!-- Caminho relativo para a imagem dentro de /static/images -->
+                        <img src="/images/carrinho.png" alt="Carrinho">
                     </a>
                 </li>
             </ul>
@@ -29,7 +32,7 @@
             <input type="password" id="password" placeholder="Senha" required>
             <button type="submit">Login</button>
         </form>        
-        <p>Não possui uma conta ainda? <a href="C:\Users\ehosh\Documents\_ProgWebJane\Trabalho\TelaCadastro\TelaCadastro.html">clique aqui</a></p>
+        <p>Não possui uma conta ainda? <a href="/tela/cadastro">clique aqui</a></p>
     </main>
 
     <!-- Carrinho lateral -->
@@ -40,5 +43,7 @@
         <button id="checkout">Finalizar Compra</button>
     </aside>
 
-    <script src="TelaInicial.js"></script>
+    <!-- Caminho relativo para o JS dentro de /static/js -->
+    <script src="/js/TelaInicial.js"></script>
+</body>
 </html>
