@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Loja</title>
+    <!-- Caminho relativo para o CSS dentro de /static/css -->
+    <link rel="stylesheet" href="/css/TelaInicial.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Links de navegação para as rotas definidas no controlador -->
+                <li><a href="/tela/inicial">Início</a></li>
+                <li><a href="/tela/produtos">Produtos</a></li>
+                <li class="cart-icon">
+                    <a href="#" id="cart-icon">
+                        <!-- Caminho relativo para a imagem dentro de /static/imagens -->
+                        <img src="/imagens/carrinho.png" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>[Nome da Loja]</h1>
+        <p>Já tem uma conta? Faça login abaixo</p>
+        <form action="#" method="post" id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Login</button>
+        </form>        
+        <p>Não possui uma conta ainda? <a href="/tela/cadastro">clique aqui</a></p>
+    </main>
+
+    <!-- Carrinho lateral -->
+    <aside id="cart-sidebar">
+        <button id="close-cart">Fechar</button>
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <button id="checkout">Finalizar Compra</button>
+    </aside>
+
+    <!-- Caminho relativo para o JS dentro de /static/js -->
+    <script src="/js/TelaInicial.js"></script>
+</body>
+</html>

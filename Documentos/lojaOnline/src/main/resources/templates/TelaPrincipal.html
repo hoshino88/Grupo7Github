@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Loja</title>
+    <!-- Caminho relativo para o CSS dentro de /static/css -->
+    <link rel="stylesheet" href="/css/TelaPrincipal.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Links de navegação para as rotas definidas no controlador -->
+                <li><a href="/tela/inicial">Início</a></li>
+                <li><a href="/tela/produtos">Produtos</a></li>
+                <li id="cart-icon">
+                    <a href="#">
+                        <!-- Caminho relativo para a imagem dentro de /static/imagens -->
+                        <img src="/imagens/carrinho.png" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="inicial">
+        <h1>[Nome da Loja]</h1>
+        <p>Comece clicando no botão <a href="/tela/produtos">Produtos</a> ou dê uma olhada em alguns dos nossos produtos mais escolhidos.</p>
+        
+        <section class="destaques">
+            <div class="produto-item" data-id="1">
+                <div class="imagem-produto"></div>
+                <p>Item 1</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+            <div class="produto-item" data-id="2">
+                <div class="imagem-produto"></div>
+                <p>Item 2</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+            <div class="produto-item" data-id="3">
+                <div class="imagem-produto"></div>
+                <p>Item 3</p>
+                <p class="preco">Preço $$$</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Carrinho lateral -->
+    <aside id="cart-sidebar">
+        <button id="close-cart">Fechar</button>
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <button id="checkout">Finalizar Compra</button>
+    </aside>
+
+    <!-- Caminho relativo para o JS dentro de /static/js -->
+    <script src="/js/TelaPrincipal.js"></script>
+</body>
+</html>
