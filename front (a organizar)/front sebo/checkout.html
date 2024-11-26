@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellon - Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Finalizar compra</h1>
+    </header>
+    <div class="checkout-container">
+        <form id="checkout-form">
+            <label for="address">Endereço</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+
+            <label for="payment">Forma de pagamento</label>
+            <select id="payment" required>
+                <option value="" disabled selected>Selecione a forma de pagamento</option>
+                <option value="credit">Cartão de crédito</option>
+                <option value="pix">Pix</option>
+                <option value="boleto">Boleto</option>
+            </select>
+
+            <div id="payment-details"></div>
+
+            <button type="submit">Confirmar compra</button>
+        </form>
+    </div>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
