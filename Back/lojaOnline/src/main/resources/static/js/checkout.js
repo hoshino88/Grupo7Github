@@ -48,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     checkoutForm.addEventListener("submit", (e) => {
         e.preventDefault();
         alert("Order placed successfully!");
-        window.location.href = "index.html"; 
+        window.location.href = "/tela/index"; 
     });
 });

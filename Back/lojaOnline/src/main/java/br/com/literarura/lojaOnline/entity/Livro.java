@@ -31,9 +31,12 @@ public class Livro {
     private double preco;
     @Column(name = "descricao")
     private String descricao;
+    @Column(name = "imagem")
+    private String imagemPath; // campo para armazenar o caminho da imagem
 
-    public Livro(String titulo, String autor, String editora, int ano, String genero, String idioma, int paginas,
-            double preco, String descricao) {
+    // Construtor
+    public Livro(String titulo, String autor, String editora, int ano, String genero,
+            String idioma, int paginas, double preco, String descricao, String imagemPath) {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
@@ -43,8 +46,10 @@ public class Livro {
         this.paginas = paginas;
         this.preco = preco;
         this.descricao = descricao;
+        this.imagemPath = imagemPath;
     }
 
+    // Getters e setters
     public String getTitulo() {
         return titulo;
     }
@@ -117,4 +122,11 @@ public class Livro {
         this.descricao = descricao;
     }
 
+    public String getImagemPath() {
+        return imagemPath;
+    }
+
+    public void setImagemPath(String imagemPath) {
+        this.imagemPath = imagemPath;
+    }
 }

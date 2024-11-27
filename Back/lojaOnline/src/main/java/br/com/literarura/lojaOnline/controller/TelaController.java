@@ -31,4 +31,9 @@ public class TelaController {
     public String telaSignup() {
         return "signup";
     }
+
+    @RequestMapping("/signupBook")
+    public String telaSignupBook() {
+        return "signupBook";
+    }
 }

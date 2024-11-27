@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkoutBtn.addEventListener("click", () => {
         alert("Redirecionando para a página de checkout...");
-        window.location.href = "checkout.html";
+        window.location.href = "/tela/checkout";
     });
 
     renderCart();
